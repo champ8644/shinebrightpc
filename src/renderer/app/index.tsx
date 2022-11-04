@@ -7,8 +7,8 @@ import { Navigation } from './Navigation';
 import { Popover2Example } from './Popover2Example';
 import { SelectExample } from './SelectExample';
 
+// import Home from '@shinebright/apps/desktop/pages';
 FocusStyleManager.onlyShowFocusOnTabs();
-
 export default function App() {
   return (
     <div>
@@ -17,6 +17,7 @@ export default function App() {
       <CoreExample />
       <SelectExample />
       <Popover2Example />
+      {/* <Home /> */}
     </div>
   );
 }

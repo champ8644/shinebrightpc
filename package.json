@@ -37,6 +37,7 @@
   },
   "devDependencies": {
     "@react-native-community/eslint-config": "^3.0.1",
+    "@shinebright": "https://github.com/Foggyhazel/shinebright.git#desktop-tauri",
     "@types/debug": "^4.1.7",
     "@types/lodash": "^4.14.178",
     "@types/react": "^17.0.38",
@@ -64,7 +65,7 @@
     "eslint-plugin-promise": "^6.0.0",
     "eslint-plugin-react": "^7.28.0",
     "eslint-plugin-react-hooks": "^4.3.0",
-    "parcel": "^2.0.1",
+    "parcel": "2.7.0",
     "prettier": "^2.5.1",
     "typescript": "^4.5.4"
   },

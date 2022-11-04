@@ -2,8 +2,9 @@ import _ from 'lodash';
 import { mean, standardDeviation } from 'simple-statistics';
 
 import { writeBooks } from '../../utils/xlsx';
-import best1 from '../output/best1.json';
-import best2 from '../output/best2.json';
+
+// import best1 from '../output/best1.json';
+// import best2 from '../output/best2.json';
 
 interface Merge {
   member: Array<Record<string, unknown>>;
@@ -28,8 +29,8 @@ interface Merge {
 export default function generateOutput() {
   const best: Array<Array<Record<string, unknown>>> = [];
   for (let i = 0; i < 10; i++) {
-    best.push(best2[i]);
-    best.push(best1[i]);
+    // best.push(best2[i]);
+    // best.push(best1[i]);
   }
   const average = best.map((each) => ({ avg: mean(each.map((x) => x.score as number)) }));
   const SD = best.map((each) => ({ SD: standardDeviation(each.map((x) => x.score as number)) }));
